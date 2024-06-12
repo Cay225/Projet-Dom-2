@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande de Repas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Formulaire d'enregistrement -->
+    <section id="enregistrement" class="enregistrement-section">
+        <div class="container">
+            <h2>Enregistrement</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe (8 caractères minimum)</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </div>
+                <button type="submit">Valider</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Section Choix de Menus -->
+    <section id="choix-menus" class="choix-menus-section">
+        <!-- Menu du Jour -->
+        <div class="menu-section">
+            <h2>Menu du Jour</h2>
+            <div class="menu-container">
+                <!-- Insérer ici les éléments du Menu du Jour -->
+                <div class="menu-item">
+                    <img src="entree.jpg" alt="Entrée" class="menu-image">
+                    <p>Entrée</p>
+                    <button class="btn-ajouter" data-plat="entree">Ajouter au Panier</button>
+                </div>
+                <!-- Ajouter d'autres éléments au besoin -->
+            </div>
+        </div>
+
+        <!-- Menu Normal -->
+        <div class="menu-section">
+            <h2>Menu Normal</h2>
+            <div class="menu-container">
+                <!-- Insérer ici les éléments du Menu Normal -->
+                <div class="menu-item">
+                    <img src="entree2.jpg" alt="Entrée" class="menu-image">
+                    <p>Entrée</p>
+                    <button class="btn-ajouter" data-plat="entree2">Ajouter au Panier</button>
+                </div>
+                <!-- Ajouter d'autres éléments au besoin -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
